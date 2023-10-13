@@ -1,0 +1,157 @@
+body {
+    display: grid;
+    grid-template-rows: minmax(0, auto) minmax(100px, auto);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 3vmin;
+}
+
+div {
+    display: grid;
+    word-break: break-word;
+    white-space: normal;
+    outline: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 5vmin;
+    margin: 20px;
+    text-align: left;
+}
+
+h3 {
+    margin: 40px 0;
+    padding: 5px;
+    outline: 1px solid black;
+    min-height: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+}
+
+ul {
+    font-size: 5vmin;
+}
+
+.block_1-5 {
+    grid-template-columns: 1fr 3fr;
+}
+
+.block_2-5 {
+    grid-template-rows: minmax(100px, auto) 1fr;
+}
+
+.block_3-5 {
+    grid-template-columns: 66% 34%;
+}
+
+.block_3and5 {
+    grid-template-rows: minmax(50px, auto) 1fr;
+}
+
+
+.block_1 {
+    align-items: center;
+    text-align: center;
+    background-color: lightpink;
+}
+
+.block_2 {
+    box-sizing: border-box;
+    padding: 0 30px;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.block_2 p {
+    margin: 20px 0;
+    margin-right: 20px;
+    width: auto;
+    align-self: center;
+}
+
+.block_x {
+    width: auto;
+    margin-left: 10px;
+}
+
+.block_3 {
+    align-items: center;
+    text-align: right;
+    background-color: #eaf2dd;
+}
+
+.block_4 {
+    align-content: center;
+    text-align: center;
+    background-color: #eaf2dd;
+}
+
+.block_5 {
+    grid-template-areas: "img1 img2" "img3 img4";
+    text-align: left;
+    align-content: center;
+    background-color: white;
+}
+
+.block_6 {
+    grid-template-columns: 40% 60%;
+    padding: 0 30px;
+    background-color: lightblue;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.block_y {
+    width: auto;
+    margin-right: 20px;
+}
+
+.block_6 a {
+    text-align: right;
+    padding: 5px;
+    width: auto;
+    font-size: 4vmin;
+}
+
+.picture {
+    max-width: 100%;
+    margin: 1px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    width: fit-content;
+    height: fit-content;
+    max-height: 330px;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.block_2-left, .block_2-right, .block_6-left, .block_6-right {
+    outline: 0;
+}
